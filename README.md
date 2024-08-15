@@ -15,7 +15,7 @@ A simple and addictive Chain Reaction game implemented in HTML, CSS, and JavaScr
 
 Chain Reaction is a strategic turn-based game where players place numbers in cells. When a cell reaches its threshold, it explodes, sending numbers to adjacent cells. The objective is to eliminate your opponents by causing chain reactions.
 
-![Chain Reaction Game]([link-to-screenshot.png](https://github.com/user-attachments/assets/b7cebff7-4362-415b-96b0-2fbec61cf541))
+![Chain Reaction Game](https://drive.google.com/file/d/1WktjxTa3nmSvhib-ZtJbJNJfJrwiIczf/view)
 
 ## Features
 
