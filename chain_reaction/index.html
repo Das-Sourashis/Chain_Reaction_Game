@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.3" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Grid Page</title>
+  </head>
+  <body>
+    <div class="startContainer">
+      <h1>Welcome To Chain Reaction Game</h1>
+      <div class="formContainer">
+        <div class="left">
+          <div id="input-form">
+            <label for="rows">Game Rows (5-20):</label>
+            <input
+              type="number"
+              id="rows"
+              name="rows"
+              min="5"
+              max="20"
+              required
+              value="5"
+            />
+            <br /><br />
+            <label for="columns">Game Columns (5-20):</label>
+            <input
+              type="number"
+              id="columns"
+              name="columns"
+              min="5"
+              max="20"
+              required
+              value="5"
+            />
+            <br /><br />
+            <label for="players">Players (2-8):</label>
+            <input
+              type="number"
+              id="players"
+              name="players"
+              min="2"
+              max="8"
+              required
+              value="2"
+            />
+            <br /><br />
+            <button id="okButton" type="button" onclick="generateInputs()">
+              OK
+            </button>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Name of Players</h3>
+          <form id="nameInputsForm">
+            <div id="nameInputsContainer"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="game_div">
+      <nav id="navbar">
+        <!-- Initially hidden -->
+        <span>CHAIN REACTION</span>
+        <div class="player-info">
+          <div id="player-box" ></div>
+          <div id="player-name"></div>
+        </div>
+
+        <div class="dropdown">
+          <span>Players</span>
+          <ul class="dropdown-menu"></ul>
+        </div>
+        <span id="endGameButton">end game</span>
+      </nav>
+
+      <div id="container"><!-- Grids will be added dynamically here --></div>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <p id="winnerMessage"></p>
+          <button id="closeButton">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="1.js"></script>
+  </body>
+</html>
